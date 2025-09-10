@@ -1,0 +1,29 @@
+  /* === PENAMBAHAN BARU UNTUK MENGATASI MASALAH JARAK SIDEBAR === */
+  /* Kode ini akan memaksa area konten utama untuk memenuhi seluruh lebar halaman */
+  .main-content {
+      margin-left: 0 !important;
+      padding-left: 15px !important;
+      /* Diberi sedikit padding agar tidak terlalu mepet */
+      padding-right: 15px !important;
+  }
+
+  /* Mencegah scroll horizontal yang mungkin muncul */
+  body {
+      overflow-x: hidden;
+  }
+
+  /* === AKHIR PENAMBAHAN BARU === */
+
+
+  /* Style yang sudah ada sebelumnya untuk memusatkan konten di dalam container */
+  .full-page-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* Memusatkan secara vertikal */
+      align-items: center;
+      /* Memusatkan secara horizontal */
+      min-height: calc(100vh - 120px);
+      /* Mengambil tinggi layar penuh dikurangi perkiraan tinggi topbar/footer */
+      padding: 2rem 0;
+  }

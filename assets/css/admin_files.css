@@ -1,0 +1,29 @@
+ .list-group-item {
+     border: none !important;
+ }
+
+ .label-text {
+     flex: 1;
+     max-width: 200px;
+     font-size: 0.9rem;
+ }
+
+ .badge {
+     font-size: 0.85rem;
+     padding: 0.3rem 0.6rem;
+     min-width: 50px;
+     text-align: center;
+ }
+
+ .gap-3 {
+     gap: 1rem;
+ }
+
+ .list-group-item-light {
+     background-color: #f8f9fa !important;
+ }
+
+ .py-1 {
+     padding-top: 0.25rem !important;
+     padding-bottom: 0.25rem !important;
+ }

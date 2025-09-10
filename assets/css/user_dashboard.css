@@ -1,0 +1,134 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+ /* === PENAMBAHAN BARU UNTUK MENGATASI MASALAH JARAK SIDEBAR === */
+ /* Kode ini akan memaksa area konten utama untuk memenuhi seluruh lebar halaman */
+ .main-content {
+     margin-left: 0 !important;
+     padding-left: 15px !important;
+     /* Diberi sedikit padding agar tidak terlalu mepet */
+     padding-right: 15px !important;
+ }
+
+ /* Mencegah scroll horizontal yang mungkin muncul */
+ body {
+     overflow-x: hidden;
+ }
+
+ /* === AKHIR PENAMBAHAN BARU === */
+
+
+ /* Style yang sudah ada sebelumnya untuk memusatkan konten di dalam container */
+ .full-page-center {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* Memusatkan secara vertikal */
+     align-items: center;
+     /* Memusatkan secara horizontal */
+     min-height: calc(100vh - 120px);
+     /* Mengambil tinggi layar penuh dikurangi perkiraan tinggi topbar/footer */
+     padding: 2rem 0;
+ }
+
+ .large-emoji {
+     font-size: 4rem
+ }
+
+ .engagement-icon {
+     font-size: 10rem
+ }
+
+ .response-button,
+ .engagement-button {
+     background: none;
+     border: none;
+     padding: 0;
+     cursor: pointer
+ }
+
+ #heart-container {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     pointer-events: none;
+     z-index: 9999
+ }
+
+ .floating-heart,
+ .floating-share,
+ .floating-response {
+     position: absolute;
+     font-size: 7rem;
+     animation: floatUp 2s ease-out forwards;
+     opacity: 1;
+     transform: translate(-50%, -50%)
+ }
+
+
+ @keyframes floatUp {
+     0% {
+         transform: translate(-50%, -50%) translateY(0) scale(1);
+         opacity: 1
+     }
+
+     100% {
+         transform: translate(-50%, -50%) translateY(-150px) scale(1.5);
+         opacity: 0
+     }
+ }
+
+ .stopwatch-container-user {
+     display: flex;
+     flex-direction: column;
+     align-items: center
+ }
+
+ .stopwatch-display-user {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #fff;
+     border: 10px solid #e9ecef;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, .1)
+ }
+
+ #display-card {
+     font-family: 'Roboto Mono', monospace;
+     font-size: 2rem;
+     color: #344767;
+     line-height: 1
+ }
+
+ #status {
+     font-size: .85rem;
+     font-weight: 500;
+     color: #6c757d;
+     background-color: rgba(233, 236, 239, .9);
+     padding: .3rem .8rem;
+     border-radius: 1rem;
+     margin-bottom: .75rem
+ }
+
+ .stopwatch-wrapper {
+     position: fixed;
+     bottom: 1.5rem;
+     right: 1.5rem;
+     z-index: 1050;
+ }
+
+ @media (max-width: 767.98px) {
+     .stopwatch-wrapper {
+         position: relative;
+         bottom: auto;
+         right: auto;
+         display: flex;
+         justify-content: center;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+     }
+ }

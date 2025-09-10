@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+.stopwatch-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 14px solid #e9ecef;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.stopwatch-circle #display {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.8rem;
+    color: #344767;
+    letter-spacing: 1px;
+}
+
+#realtime-comments-list .list-group-item {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .chart {
+        height: 150px !important;
+        /* Kurangi ukuran untuk tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    .chart {
+        height: 120px !important;
+        /* Kurangi ukuran untuk ponsel */
+    }
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+    .modal-xl {
+        max-width: 90%;
+    }
+
+    .chart {
+        height: 150px !important;
+        /* Konsisten dengan admin_dashboard.php */
+    }
+
+    .card-body {
+        padding: 1rem !important;
+    }
+
+    .text-sm {
+        font-size: 0.8rem;
+    }
+
+    .text-lg {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-xl {
+        max-width: 95%;
+    }
+
+    .chart {
+        height: 120px !important;
+        /* Konsisten dengan admin_dashboard.php */
+    }
+
+    .card-body {
+        padding: 0.75rem !important;
+    }
+
+    .text-sm {
+        font-size: 0.75rem;
+    }
+
+    .text-lg {
+        font-size: 0.9rem;
+    }
+}
+
+/* Style untuk elemen-elemen di dalam kartu baru */
+.large-emoji {
+    font-size: 4rem;
+    /* Sedikit disesuaikan */
+}
+
+.engagement-icon {
+    font-size: 2.5rem;
+    /* Disesuaikan agar seimbang */
+}
+
+.response-button,
+.engagement-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.floating-heart {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatUp 2s ease-out forwards;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translate(-50%, -50%) translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(-150px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.comment-btn.active {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+/* Style untuk stopwatch di pojok */
+.stopwatch-container-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch-display-user {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 10px solid #e9ecef;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#display-card {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: #344767;
+    line-height: 1;
+}
+
+#status {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6c757d;
+    background-color: rgba(233, 236, 239, 0.9);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+}
