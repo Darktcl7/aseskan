@@ -1,0 +1,40 @@
+# CodeIgniter
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+
+# Composer
+vendor/
+composer.lock
+
+# Environment files
+.env
+
+# Database backups
+*.sql
+db/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.zip
+
+# User uploads (if any)
+uploads/*
+!uploads/index.html
+
+# Documentation files (optional - uncomment if you don't want to upload)
+# *.md
+# *.pdf

@@ -1,0 +1,56 @@
+ .list-group-item {
+     border: none !important;
+ }
+
+ .label-text {
+     flex: 1;
+     max-width: 200px;
+     font-size: 0.9rem;
+ }
+
+ .badge {
+     font-size: 0.85rem;
+     padding: 0.3rem 0.6rem;
+     min-width: 50px;
+     text-align: center;
+ }
+
+ /* Gap utilities for flex layouts */
+ .gap-2 {
+     gap: 0.5rem !important;
+ }
+
+ .gap-3 {
+     gap: 1rem !important;
+ }
+
+ .list-group-item-light {
+     background-color: #f8f9fa !important;
+ }
+
+ .py-1 {
+     padding-top: 0.25rem !important;
+     padding-bottom: 0.25rem !important;
+ }
+
+ /* Simple badge styling - extra small */
+ .badge.bg-gradient-info,
+ .badge.badge-sm {
+     font-size: 0.5rem !important;
+     padding: 0.15rem 0.4rem !important;
+     font-weight: 400 !important;
+     line-height: 1.2 !important;
+     vertical-align: middle !important;
+ }
+
+ /* Search input styling */
+ #searchInput {
+     border: 1px solid #d2d6da !important;
+     border-radius: 0.5rem !important;
+     padding: 0.5rem 0.75rem !important;
+ }
+
+ #searchInput:focus {
+     border-color: #17c1e8 !important;
+     box-shadow: 0 0 0 2px rgba(23, 193, 232, 0.1) !important;
+ }
